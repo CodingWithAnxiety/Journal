@@ -8,21 +8,19 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
-    pageTitleSuffix: "",
+    pageTitle: "Rose's Journal",
+    pageTitleSuffix: " | rosely.me",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "journal.rosely.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
-      cdnCaching: true,
+      cdnCaching: false,
       typography: {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
@@ -30,25 +28,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#f7f2ed", // page background
+          lightgray: "#c5b7d2", // borders
+          gray: "#736680", // graph links, heavier borders
+          darkgray: "#101a20", // body text
+          dark: "#434353", // header text and icons
+          secondary: "#4a007b", // link colour, current graph
+          tertiary: "#125870", // hover states and visited graph nodes
+          highlight: "#b8b8b8",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#191528",
+          lightgray: "#5C162E",
+          gray: "#c7499d",
+          darkgray: "#f5e6ed",
+          dark: "#edaebd",
+          secondary: "#eb456e",
+          tertiary: "#2bcfa6",
+          highlight: "#110e1b",
           textHighlight: "#b3aa0288",
         },
       },
