@@ -1,6 +1,4 @@
 ---
-title: Welcome to Quartz
+title: Welcome to my journal!
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Currently, it is empty, but soon I'll have this full of stuff~ <3
